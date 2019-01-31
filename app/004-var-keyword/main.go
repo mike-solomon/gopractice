@@ -5,6 +5,9 @@ import "fmt"
 // Can be declared outside of functions
 var y = 40
 
+// When declared without a value - the 0 value gets assigned
+var z int
+
 func main() {
 	// Declare and assign
 	x := 42
@@ -12,6 +15,11 @@ func main() {
 
 	fmt.Println(y)
 	foo()
+
+	fmt.Println(z)
+
+	z = 4
+	fmt.Println(z)
 }
 
 func foo() {
